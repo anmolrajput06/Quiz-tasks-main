@@ -1,0 +1,406 @@
+{
+    "info": {
+        "name": "Quiz App API Collection",
+        "description": "Complete API collection for Quiz Application with MERN stack",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:5000",
+            "type": "string"
+        },
+        {
+            "key": "token",
+            "value": "",
+            "type": "string"
+        },
+        {
+            "key": "userId",
+            "value": "",
+            "type": "string"
+        },
+        {
+            "key": "attemptId",
+            "value": "",
+            "type": "string"
+        }
+    ],
+    "item": [
+        {
+            "name": "Authentication",
+            "item": [
+                {
+                    "name": "Register User",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"username\": \"testuser\",\n  \"email\": \"test@example.com\",\n  \"password\": \"password123\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/auth/register",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "auth",
+                                "register"
+                            ]
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "if (pm.response.code === 201) {",
+                                    "    const response = pm.response.json();",
+                                    "    pm.collectionVariables.set('token', response.token);",
+                                    "    pm.collectionVariables.set('userId', response.user.id);",
+                                    "}"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Login User",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"email\": \"test@example.com\",\n  \"password\": \"password123\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/auth/login",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "auth",
+                                "login"
+                            ]
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "if (pm.response.code === 200) {",
+                                    "    const response = pm.response.json();",
+                                    "    pm.collectionVariables.set('token', response.token);",
+                                    "    pm.collectionVariables.set('userId', response.user.id);",
+                                    "}"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Current User",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/auth/me",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "auth",
+                                "me"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Quiz Management",
+            "item": [
+                {
+                    "name": "Get Quiz Questions",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/quiz",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "quiz"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Submit Quiz Answers",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"answers\": [\n    {\n      \"questionId\": \"QUESTION_ID_1\",\n      \"selectedOption\": 0\n    },\n    {\n      \"questionId\": \"QUESTION_ID_2\",\n      \"selectedOption\": 2\n    },\n    {\n      \"questionId\": \"QUESTION_ID_3\",\n      \"selectedOption\": 1\n    },\n    {\n      \"questionId\": \"QUESTION_ID_4\",\n      \"selectedOption\": 3\n    },\n    {\n      \"questionId\": \"QUESTION_ID_5\",\n      \"selectedOption\": 0\n    },\n    {\n      \"questionId\": \"QUESTION_ID_6\",\n      \"selectedOption\": 2\n    },\n    {\n      \"questionId\": \"QUESTION_ID_7\",\n      \"selectedOption\": 1\n    },\n    {\n      \"questionId\": \"QUESTION_ID_8\",\n      \"selectedOption\": 3\n    },\n    {\n      \"questionId\": \"QUESTION_ID_9\",\n      \"selectedOption\": 0\n    },\n    {\n      \"questionId\": \"QUESTION_ID_10\",\n      \"selectedOption\": 2\n    }\n  ],\n  \"timeSpent\": 450\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/quiz/submit",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "quiz",
+                                "submit"
+                            ]
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "if (pm.response.code === 200) {",
+                                    "    const response = pm.response.json();",
+                                    "    pm.collectionVariables.set('attemptId', response.attemptId);",
+                                    "}"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Quiz Result",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/quiz/result/{{attemptId}}",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "quiz",
+                                "result",
+                                "{{attemptId}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get User Quiz History",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/quiz/history/{{userId}}",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "quiz",
+                                "history",
+                                "{{userId}}"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Admin - Question Management",
+            "item": [
+                {
+                    "name": "Add New Question",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"question\": \"What is the capital of France?\",\n  \"options\": [\n    \"London\",\n    \"Berlin\",\n    \"Paris\",\n    \"Madrid\"\n  ],\n  \"correctAnswer\": 2,\n  \"category\": \"Geography\",\n  \"difficulty\": \"Easy\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/quiz/question",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "quiz",
+                                "question"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get All Questions (Admin)",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/quiz/questions?page=1&limit=10",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "quiz",
+                                "questions"
+                            ],
+                            "query": [
+                                {
+                                    "key": "page",
+                                    "value": "1"
+                                },
+                                {
+                                    "key": "limit",
+                                    "value": "10"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update Question",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"question\": \"What is the capital of France? (Updated)\",\n  \"options\": [\n    \"London\",\n    \"Berlin\",\n    \"Paris\",\n    \"Madrid\"\n  ],\n  \"correctAnswer\": 2,\n  \"category\": \"Geography\",\n  \"difficulty\": \"Medium\"\n}"
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/quiz/question/QUESTION_ID",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "quiz",
+                                "question",
+                                "QUESTION_ID"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete Question",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/quiz/question/QUESTION_ID",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "quiz",
+                                "question",
+                                "QUESTION_ID"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "System",
+            "item": [
+                {
+                    "name": "Health Check",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{baseUrl}}/api/health",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "health"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

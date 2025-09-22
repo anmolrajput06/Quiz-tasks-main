@@ -1,0 +1,345 @@
+[{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3ea5"
+  },
+  "question": "What is the capital of France?",
+  "options": [
+    "London",
+    "Berlin",
+    "Paris",
+    "Madrid"
+  ],
+  "correctAnswer": 2,
+  "category": "Geography",
+  "difficulty": "Easy",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.971Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.971Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3ea6"
+  },
+  "question": "Which planet is known as the Red Planet?",
+  "options": [
+    "Venus",
+    "Mars",
+    "Jupiter",
+    "Saturn"
+  ],
+  "correctAnswer": 1,
+  "category": "Science",
+  "difficulty": "Easy",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.972Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.972Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3ea7"
+  },
+  "question": "What is 2 + 2?",
+  "options": [
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "correctAnswer": 1,
+  "category": "Mathematics",
+  "difficulty": "Easy",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.972Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.972Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3ea8"
+  },
+  "question": "Who painted the Mona Lisa?",
+  "options": [
+    "Vincent van Gogh",
+    "Pablo Picasso",
+    "Leonardo da Vinci",
+    "Michelangelo"
+  ],
+  "correctAnswer": 2,
+  "category": "Art",
+  "difficulty": "Medium",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.972Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.972Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3ea9"
+  },
+  "question": "What is the largest ocean on Earth?",
+  "options": [
+    "Atlantic",
+    "Indian",
+    "Arctic",
+    "Pacific"
+  ],
+  "correctAnswer": 3,
+  "category": "Geography",
+  "difficulty": "Easy",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.972Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.972Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3eaa"
+  },
+  "question": "Which programming language is known for web development?",
+  "options": [
+    "Python",
+    "Java",
+    "JavaScript",
+    "C++"
+  ],
+  "correctAnswer": 2,
+  "category": "Technology",
+  "difficulty": "Medium",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.973Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.973Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3eab"
+  },
+  "question": "What is the chemical symbol for gold?",
+  "options": [
+    "Go",
+    "Gd",
+    "Au",
+    "Ag"
+  ],
+  "correctAnswer": 2,
+  "category": "Science",
+  "difficulty": "Medium",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.973Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.973Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3eac"
+  },
+  "question": "Which country has the most population?",
+  "options": [
+    "India",
+    "China",
+    "United States",
+    "Brazil"
+  ],
+  "correctAnswer": 1,
+  "category": "Geography",
+  "difficulty": "Medium",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.973Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.973Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3ead"
+  },
+  "question": "What is the square root of 64?",
+  "options": [
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "correctAnswer": 2,
+  "category": "Mathematics",
+  "difficulty": "Easy",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.973Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.973Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3eae"
+  },
+  "question": "Which year did World War II end?",
+  "options": [
+    "1944",
+    "1945",
+    "1946",
+    "1947"
+  ],
+  "correctAnswer": 1,
+  "category": "History",
+  "difficulty": "Medium",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.973Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.973Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3eaf"
+  },
+  "question": "What is the fastest land animal?",
+  "options": [
+    "Lion",
+    "Cheetah",
+    "Leopard",
+    "Tiger"
+  ],
+  "correctAnswer": 1,
+  "category": "Science",
+  "difficulty": "Easy",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.973Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.973Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3eb0"
+  },
+  "question": "Which element has the atomic number 1?",
+  "options": [
+    "Helium",
+    "Hydrogen",
+    "Lithium",
+    "Carbon"
+  ],
+  "correctAnswer": 1,
+  "category": "Science",
+  "difficulty": "Medium",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.974Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.974Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3eb1"
+  },
+  "question": "What is the currency of Japan?",
+  "options": [
+    "Won",
+    "Yuan",
+    "Yen",
+    "Dollar"
+  ],
+  "correctAnswer": 2,
+  "category": "Geography",
+  "difficulty": "Easy",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.974Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.974Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3eb2"
+  },
+  "question": "Which company developed the iPhone?",
+  "options": [
+    "Samsung",
+    "Google",
+    "Apple",
+    "Microsoft"
+  ],
+  "correctAnswer": 2,
+  "category": "Technology",
+  "difficulty": "Easy",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.974Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.974Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d13c6ffd5541f6de8c3eb3"
+  },
+  "question": "What is the largest mammal in the world?",
+  "options": [
+    "African Elephant",
+    "Blue Whale",
+    "Giraffe",
+    "Hippopotamus"
+  ],
+  "correctAnswer": 1,
+  "category": "Science",
+  "difficulty": "Easy",
+  "isActive": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:19.974Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:19.974Z"
+  }
+}]

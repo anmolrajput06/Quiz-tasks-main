@@ -1,0 +1,114 @@
+[{
+  "_id": {
+    "$oid": "68d126edf846d26c54e0208f"
+  },
+  "username": "User",
+  "email": "user@gmail.com",
+  "password": "$2a$10$nPtJPXKNs6zYYGZd1ScVoe0NKkokTouAqrxcbAMe38Kb9C1lXD4X6",
+  "role": "user",
+  "totalAttempts": 0,
+  "bestScore": 0,
+  "averageScore": 0,
+  "createdAt": {
+    "$date": "2025-09-22T10:37:33.359Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T10:37:33.359Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68d127f484a29c046ca35f80"
+  },
+  "username": "testuser",
+  "email": "test@example.com",
+  "password": "$2a$10$OTsLR7BduuEZ44e6BkdEVemaocVZ04XarxcH9K0nGQhrUoteF7G1W",
+  "role": "user",
+  "totalAttempts": 0,
+  "bestScore": 0,
+  "averageScore": 0,
+  "createdAt": {
+    "$date": "2025-09-22T10:41:56.804Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T10:41:56.804Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68d128ab84a29c046ca35f84"
+  },
+  "username": "newuser",
+  "email": "newuser@example.com",
+  "password": "$2a$10$EFfWvl4jgmpUcS/ngnOzp.POlGGUy2pQykHoDF7jQpIkVUOO8N8Gi",
+  "role": "user",
+  "totalAttempts": 0,
+  "bestScore": 0,
+  "averageScore": 0,
+  "createdAt": {
+    "$date": "2025-09-22T10:44:59.138Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T10:44:59.138Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68d129d6e43f9c3cbf7b58f4"
+  },
+  "username": "ajay",
+  "email": "aj@gmail.com",
+  "password": "$2a$10$qnQ0UQilZOt3Zl.Wv6x3A.3EBL7S3tpgS8IzhQZ.XTt3OndyBmfZK",
+  "role": "user",
+  "totalAttempts": 1,
+  "bestScore": 10,
+  "averageScore": 10,
+  "createdAt": {
+    "$date": "2025-09-22T10:49:58.278Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T10:56:03.256Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68d12a58e43f9c3cbf7b5902"
+  },
+  "username": "testuser2",
+  "email": "testuser2@example.com",
+  "password": "$2a$10$n9gxWp4zymexPeIP9oojZ.ufr8cFsdXb8URPdrGxaxcYWCKc8AiHq",
+  "role": "user",
+  "totalAttempts": 0,
+  "bestScore": 0,
+  "averageScore": 0,
+  "createdAt": {
+    "$date": "2025-09-22T10:52:08.454Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T10:52:08.454Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68d13c77b8de5ed67377babc"
+  },
+  "username": "admin",
+  "email": "admin@quiz.com",
+  "password": "$2a$10$OakPvvtC.VjOGTqTIJbw8ezduTHXLYrzslseQ1A1kMVn5qKbk2Ysu",
+  "role": "admin",
+  "totalAttempts": 0,
+  "bestScore": 0,
+  "averageScore": 0,
+  "createdAt": {
+    "$date": "2025-09-22T12:09:27.423Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-22T12:09:27.423Z"
+  },
+  "__v": 0
+}]
