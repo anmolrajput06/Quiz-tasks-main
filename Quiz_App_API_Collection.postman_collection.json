@@ -4,6 +4,7 @@
         "description": "Complete API collection for Quiz Application with MERN stack",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
     },
+    
     "variable": [
         {
             "key": "baseUrl",
